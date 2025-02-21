@@ -32,3 +32,13 @@ Dentre as maneiras possíveis para colaborar com o projeto, podemos destacar:
 A melhor forma de colaborar é assumindo algum dos issues do projeto, e para isso basta:
 
 1. Submeter através de um push, um novo pull request com a solução implementada. O nome da branch do pull request deve referenciar o número da issue que está sendo tratada. Ex: 1-Ajustes_titulo_sumario
+
+## Referências importantes
+1. [Wikibook do LaTeX](https://en.wikibooks.org/wiki/LaTeX)
+Possui bastante informação sobre funcionamento básico e o que já é disponível por padrão no LaTeX. 
+1. [Repositório de pacotes LaTeX](https://ctan.org)
+Repositório oficial de pacotes LaTeX
+1. [Fontes disponíveis no CTAN](https://ctan.org/topic/font)
+Lista com fontes disponíveis em pacotes para o LaTeX
+
+
