@@ -1,0 +1,19 @@
+\makeatletter
+\renewcommand{\listoffigures}{
+    \begin{center}
+        \small\bfseries\MakeUppercase{Lista de Figuras}
+    \end{center}
+    \vspace{1em} 
+    \@starttoc{lof} 
+}
+\@removefromreset{figure}{chapter}
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\cftfigpresnum}{Figura~} 
+\renewcommand{\cftfigaftersnum}{ - }
+\renewcommand{\cftfignumwidth}{5em}
+\renewcommand{\cftfigpagefont}{\hfill} 
+\makeatother
+
+\listoffigures
+\thispagestyle{empty}
+\newpage

@@ -1,0 +1,66 @@
+\chapter{Experimentos}\label{cap:experimentos}
+
+Nesse capítulo será abordado o escopo dos experimentos, em qual ambiente foram executados, os detalhes dos datasets utilizados bem como a metodologia definida para a sua execução. 
+
+\section{Ambiente utilizado}
+
+
+\subsection{Configurações de hardware}
+
+Os experimentos foram realizados utilizando a seguinte configuração de hardware:
+
+\begin{itemize}
+    \item Processador: Intel\textsuperscript{\tiny{\copyright}} Core\textsuperscript{\tiny{TM}} i9-13900KF 
+    \begin{itemize}
+        \item Núcleos: 20
+        \item Threads: 32
+        \item Velocidade: 5.40GHz
+    \end{itemize}
+    \item Memória RAM: 64 GB
+    \item SSD M2: 1.8 TB
+    \item Placa de vídeo: NVIDIA GeForce RTX 4060, 8GB
+\end{itemize}
+
+\subsection{Configurações de software}
+
+Os seguintes configurações e componentes de software foram utilizados durante a sua execução:
+
+\begin{itemize}
+    \item Sistema Operacional: Linux Mint 22, kernel 6.8.0-41-generic
+    \item Python (3.12.8) 
+    \item Conda (24.11.3) 
+    \item Matplotlib (3.9)
+\end{itemize}
+
+\section{Exemplo de Section do experimento}
+
+\lipsum[7]
+
+\subsection{Exemplo de subsection do experimento}
+
+\lipsum[8]
+A Tabela \ref{tab:tabelaexemplo1}, apresenta as informações \lipsum[9]
+
+Foram descartadas as observações que possuíam valores nulos, e os atributos que não não eram do tipo numérico.  
+\begin{table}[H]
+\caption{Exemplo de tabela de uso genérico}
+\begin{center}
+\fontsize{10pt}{13pt}\selectfont
+\begin{tabular}{lcccc}
+\toprule
+                  Base de dados & Observações  &   Features   &   Classe      & Desbalanceamento\\
+                                & (used/total) & (used/total) & (used/total)  &                 \\
+\midrule
+                       Dataset1 &   150/150    &     4/4      &     3/3       & 1.00            \\
+                       Dataset3 &   208/208    &    60/60     &     2/2       & 1.14            \\
+                       Dataset3 &   214/214    &     9/10     &     6/7       & 8.44            \\
+\bottomrule
+\end{tabular}
+\label{tab:tabelaexemplo1}
+\end{center}
+\end{table}
+
+
+\subsubsection{Exemplo de subsubsection do experimento}
+
+\lipsum[10-12]

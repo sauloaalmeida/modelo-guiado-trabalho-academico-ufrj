@@ -1,0 +1,17 @@
+\makeatletter
+\renewcommand{\listoftables}{
+    \begin{center}
+        \small\bfseries\MakeUppercase{Lista de Tabelas}
+    \end{center}
+    \vspace{1em} 
+    \@starttoc{lot} 
+}
+\@removefromreset{table}{chapter}
+\renewcommand{\thetable}{\arabic{table}}
+\renewcommand{\cfttabpresnum}{Tabela~} 
+\renewcommand{\cfttabaftersnum}{ - }
+\renewcommand{\cfttabnumwidth}{5em}
+\renewcommand{\cfttabpagefont}{\hfill} 
+\listoftables
+\thispagestyle{empty}
+\newpage
