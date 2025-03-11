@@ -16,16 +16,30 @@
 \usepackage{adjustbox}
 \usepackage{color}
 \usepackage{microtype} 			% para melhorias de justificação
-\usepackage[indentfirst=false]{quoting}
-\usepackage{setspace}
+\usepackage[indentfirst=false]{quoting} % utilizadao para folha de rosto e epigrafe
+\usepackage{setspace} % utilizado para alterar o espacamento em determinadas paginas do texto
 \usepackage{url}
-\usepackage{enumitem}
+\usepackage{enumitem} % Utilizada para formatar uma lista enumerada 
 \usepackage{booktabs}
 \usepackage{arydshln}
-\usepackage{tocloft}
+\usepackage{tocloft} % Utilizada para customizar cabecalho e lista de figuras e tabelas
 \usepackage{float}
 
+
 \usepackage{lipsum} %pode remover quando for realizar o trabalho
+
+%%%%%% REDEFININDO LOCAL DA PAGINACAO - INICIO %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr} % Pacote utilizado para alterar a posicao da paginação
+\pagestyle{fancy}
+\fancyhf{} % Limpa todos os cabeçalhos e rodapés padrão
+\fancyhead[R]{\thepage} % Coloca o número da página no canto superior direito
+\renewcommand{\headrulewidth}{0pt} % Remove a linha do cabeçalho (opcional)
+\fancypagestyle{plain}{
+    \fancyhf{} % Limpa cabeçalhos e rodapés
+    \fancyhead[R]{\thepage} % Número da página no canto superior direito
+    \renewcommand{\headrulewidth}{0pt} % Remove a linha do cabeçalho
+}
+%%%%%% REDEFININDO LOCAL DA PAGINACAO - FIM %%%%%%%%%%%%%%%%%%%%%%%%
 
 \onehalfspacing
 
