@@ -3,52 +3,18 @@
                english,          % Hifenizacoes em ingles
                brazil            % Ultimo idioma é o padrao do documento
                ]{report}
-\usepackage[brazil]{babel}   
-\usepackage[top=3cm,
-            bottom=2cm,
-            left=3cm,
-            right=2cm]{geometry}
-\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
-\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão 
-\usepackage{PTSerif}             % Opções de fontes em: https://ctan.org/topic/font
-\usepackage{graphicx}		    % Inclusão de gráficos
-\usepackage{lscape}             % usado para rotacionar tabelas, etc
-\usepackage{adjustbox}
-\usepackage{color}
-\usepackage{microtype} 			% para melhorias de justificação
-\usepackage[indentfirst=false]{quoting} % utilizadao para folha de rosto e epigrafe
-\usepackage{setspace} % utilizado para alterar o espacamento em determinadas paginas do texto
-\usepackage{url}
-\usepackage{enumitem} % Utilizada para formatar uma lista enumerada 
-\usepackage{booktabs}
-\usepackage{arydshln}
-\usepackage{tocloft} % Utilizada para customizar cabecalho e lista de figuras e tabelas
-\usepackage{float}
 
+%Dados que precisam ser customizados em todo projeto. Ex.: Titulo, Autor, Orientador, etc 
+\input{config/informacoes_gerais}
 
-\usepackage{lipsum} %pode remover quando for realizar o trabalho
+%Configurações gerais do projeto, normalmente não precisam ser alterados
+\input{config/configuracoes}
 
-%%%%%% REDEFININDO LOCAL DA PAGINACAO - INICIO %%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{fancyhdr} % Pacote utilizado para alterar a posicao da paginação
-\pagestyle{fancy}
-\fancyhf{} % Limpa todos os cabeçalhos e rodapés padrão
-\fancyhead[R]{\thepage} % Coloca o número da página no canto superior direito
-\renewcommand{\headrulewidth}{0pt} % Remove a linha do cabeçalho (opcional)
-\fancypagestyle{plain}{
-    \fancyhf{} % Limpa cabeçalhos e rodapés
-    \fancyhead[R]{\thepage} % Número da página no canto superior direito
-    \renewcommand{\headrulewidth}{0pt} % Remove a linha do cabeçalho
-}
-%%%%%% REDEFININDO LOCAL DA PAGINACAO - FIM %%%%%%%%%%%%%%%%%%%%%%%%
+% pacote que gera textos aletorios, pode remover quando for realizar o trabalho
+\usepackage{lipsum} 
 
-\onehalfspacing
 
 \begin{document}
-
-\addtocounter{page}{-2} % Diminuindo a paginacao em dois, para deconsiderar a capa e a ficha catalografica
-
-%Dados usados em todo o documento
-\input{config/informacoes_gerais}
 
 %Includes pré-textuais
 \input{1-pre-textuais/capa}
