@@ -1,0 +1,50 @@
+\usepackage[brazil]{babel}              % Traduções utilizados por vários pacotes
+\usepackage[top=3cm,                    % definição padrao das margens das paginas
+            bottom=2cm,
+            left=3cm,
+            right=2cm]{geometry}
+\usepackage[T1]{fontenc}		        % Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		        % Codificacao do documento UTF-8 
+\usepackage{PTSerif}                    % Pacote da fonte escolhida: Opções de fontes em: https://ctan.org/topic/font
+\usepackage{graphicx}		            % Inclusão de gráficos, pdfs
+\usepackage{lscape}                     % permite colocar um conteudo em formato paisagem (rotacionar)
+\usepackage{color}                      % Permite utilizar cores pelos nomes
+\usepackage{microtype}     			    % para melhorias de justificação
+\usepackage[indentfirst=false]{quoting} % Usado para citação
+\usepackage{url}                        % Usado para formatar URLs no texto
+\usepackage{enumitem}                   % Permite alterar o formato das listas enumeradas 
+\usepackage{booktabs}                   % Usado para personalizar elementos em tabelas, como \toprule e \midrule
+\usepackage{arydshln}                   % Usado para personalizar elementos em tabelas, como \cdashline
+\usepackage{amsmath}                    % Usado nas referencias de equações, através do comando \eqref
+\usepackage{tocloft}                    % Pacote para formatar sumário, lista de figuras e tabelas
+\usepackage{float}                      % Necessario para posicionar as figuras e tabelas de forma flutuante
+\usepackage{enumitem}                   % Utilizada para formatar uma lista enumerada 
+\usepackage{adjustbox}
+
+
+
+%%%%% Redefinindo localização da paginação - INICIO %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr} % Pacote utilizado para alterar a posicao da paginação
+\pagestyle{fancy}
+\fancyhf{} % Limpa todos os cabeçalhos e rodapés padrão
+\fancyhead[R]{\thepage} % Coloca o número da página no canto superior direito
+\renewcommand{\headrulewidth}{0pt} % Remove a linha do cabeçalho (opcional)
+\fancypagestyle{plain}{
+    \fancyhf{} % Limpa cabeçalhos e rodapés
+    \fancyhead[R]{\thepage} % Número da página no canto superior direito
+    \renewcommand{\headrulewidth}{0pt} % Remove a linha do cabeçalho
+}
+%%%%%% Redefinindo localização da paginação - FIM %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%% Removendo da contagem as a capa e a ficha catalográfica - INICIO  %%%%%%%%%%%%%%%%%%%%%%%%
+\addtocounter{page}{-2} 
+%%%%% Removendo da contagem as a capa e a ficha catalográfica - FIM  %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%% Configuração do espacamento padrão do documento - INICIO  %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{setspace}  % pacote usado para define o espacamento entre linhas do texto e de partes especificas
+\onehalfspacing % definindo espaçamento padrao de 1,5 nas entrelinhas
+%%%%% Configuração do espacamento padrão do documento - FIM  %%%%%%%%%%%%%%%%%%%%%%%%
