@@ -20,6 +20,7 @@
 \usepackage{float}                      % Necessario para posicionar as figuras e tabelas de forma flutuante
 \usepackage{enumitem}                   % Utilizada para formatar uma lista enumerada 
 \usepackage{svg}                        % Pacote que permite utilização de imagens SVGs (vetoriais) no documento 
+
 \usepackage{adjustbox}
 
 
@@ -60,3 +61,14 @@
 }
 \makeatother
 %%%%% Configurações de links das referencias internas e externos - FIM  %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%% Configurações do texto de Fonte das imagens - INICIO  %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{copyrightbox} % Necessario para adicionar origem das imagem e das tabelas
+\makeatletter
+\renewcommand{\CRB@setcopyrightfont}{%
+\color{black}
+}
+\makeatother
+%%%%% Configurações do texto de Fonte das imagens - FIM  %%%%%%%%%%%%%%%%%%%%%%%%
