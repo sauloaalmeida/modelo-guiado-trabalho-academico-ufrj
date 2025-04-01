@@ -18,6 +18,15 @@ Ao avaliar os dados da Tabela \ref{tab:resultados}, é possível realizar alguma
 \lipsum[18]
 
 
+A medida de aceleração %informação do speedup pode ser 
+foi calculada pela Equação~\eqref{eq:speedup}, onde \(A\) é a \textit{aceleração}, \(T_s\) é o tempo de execução serial/sequencial e \(T_p\) é o tempo de execução paralelo. Dessa forma é possível analisar quantas vezes o desempenho em relação ao tempo sequencial foi impactado pela quantidade de processos utilizados. Quanto maior o número, mais rápido o algoritmo foi executado. 
+
+\begin{equation} 
+A = T_s / T_p
+\label{eq:speedup}
+\end{equation}
+
+
 \begin{landscape}
 \begin{table}
 \caption{Exemplo de tabela complexa e rotacionada}
