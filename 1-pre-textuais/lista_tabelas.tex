@@ -1,17 +1,19 @@
-\makeatletter
-\renewcommand{\listoftables}{
-    \begin{center}
-        \small\bfseries\MakeUppercase{Lista de Tabelas}
-    \end{center}
-    \vspace{1em} 
-    \@starttoc{lot} 
-}
-\@removefromreset{table}{chapter}
-\renewcommand{\thetable}{\arabic{table}}
+%Removendo inicialização da contagem de tabelas por capitulo
+\counterwithout{table}{chapter}
+
+%Define o formato do nome da tabela
 \renewcommand{\cfttabpresnum}{Tabela~} 
 \renewcommand{\cfttabaftersnum}{ - }
-\renewcommand{\cfttabnumwidth}{5em}
-\renewcommand{\cfttabpagefont}{\hfill} 
+\renewcommand{\cfttabnumwidth}{4.5em}
+
+%Altera o titulo da lista de tabelas
+\renewcommand{\listtablename}{Lista de Tabelas}
+
+%Formata o titulo da lista de tabelas
+\renewcommand{\cftlottitlefont}{\hfill\bfseries\MakeUppercase} % Centraliza o título e deixa em negrito
+\renewcommand{\cftafterlottitle}{\hfill} % Garante o alinhamento central
+
+%imprime a lista de figiras
 \listoftables
-\thispagestyle{empty}
+\thispagestyle{empty} %remove a exibicao da pagina
 \newpage

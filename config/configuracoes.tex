@@ -75,8 +75,12 @@
 
 
 
-%%%%% Configurações da numeréo das equações - INICIO  %%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{chngcntr}
-\counterwithout{equation}{chapter}
-\renewcommand{\theequation}{\arabic{equation}}
-%%%%% Configurações da numeréo das equações - FIM  %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Evita reiniciar numeracoes das equações nos capitulos - INICIO  %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{chngcntr} % Permite modificar a numeração dos contadores: Equacoes, Tabelas, e Figuras
+\counterwithout{equation}{chapter} % Remove a reinicialização da numeração a cada capítulo
+% A configuração de tabela e figura estão em  seus respectivos arquivos de listagem 
+% juntamente com as suas demais configurações 
+%%%%% Evita reiniciar numeracoes das equações nos capitulos - FIM  %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
