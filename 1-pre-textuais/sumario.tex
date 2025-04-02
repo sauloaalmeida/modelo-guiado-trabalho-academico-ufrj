@@ -1,5 +1,9 @@
 \addtocontents{toc}{\protect\thispagestyle{empty}} % força o "empty" na primeira pagina do sumário
 \pagestyle{empty} % remove a nunemracao das demais paginas de sumario (se houver mais de uma) 
+
+%Altera e Formata o titulo do sumario
+\renewcommand{\contentsname}{\normalsize\centerline{\bfseries\MakeUppercase{Sumário}}}
+
 \tableofcontents % Insere o sumário
 \clearpage % Garante que o sumário termine aqui
-\pagestyle{fancy} % Retorna ao estilo "fancy" para o restante do documento
+\pagestyle{fancy} % Retorna ao estilo "fancy" para o restante do documents
