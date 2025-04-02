@@ -1,19 +1,19 @@
-\makeatletter
-\renewcommand{\listoffigures}{
-    \begin{center}
-        \small\bfseries\MakeUppercase{Lista de Figuras}
-    \end{center}
-    \vspace{1em} 
-    \@starttoc{lof} 
-}
-\@removefromreset{figure}{chapter}
-\renewcommand{\thefigure}{\arabic{figure}}
+%Removendo inicialização da contagem de figuras por capitulo
+\counterwithout{figure}{chapter}
+
+%Define o formato do nome da figura
 \renewcommand{\cftfigpresnum}{Figura~} 
 \renewcommand{\cftfigaftersnum}{ - }
-\renewcommand{\cftfignumwidth}{5em}
-\renewcommand{\cftfigpagefont}{\hfill} 
-\makeatother
+\renewcommand{\cftfignumwidth}{4.5em}
 
+%Altera o titulo da lista de figuras
+\renewcommand{\listfigurename}{Lista de Figuras}
+
+%Formata o titulo da lista de figuras
+\renewcommand{\cftloftitlefont}{\hfill\bfseries\MakeUppercase} % Centraliza o título e deixa em negrito
+\renewcommand{\cftafterloftitle}{\hfill} % Garante o alinhamento central
+
+%imprime a lista de figiras
 \listoffigures
-\thispagestyle{empty}
+\thispagestyle{empty} %remove a exibicao da pagina
 \newpage
