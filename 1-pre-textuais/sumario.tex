@@ -7,7 +7,7 @@
 %apresenta a numeracao ate o nivel 5, de paragrafo
 \setcounter{secnumdepth}{4}
 
-% titletoc 
+% titletoc, configura a formatação do sumário
 \titlecontents{chapter}[10pt]
   {\normalfont\normalsize\bfseries}
   {\contentslabel{10pt}\uppercase} % removido \MakeUppercase
@@ -40,7 +40,7 @@
 
 
 %Altera e Formata o titulo do sumario
-\renewcommand{\contentsname}{\vspace{-65pt}\normalsize\centerline{\bfseries\MakeUppercase{Sumário}}}
+\renewcommand{\contentsname}{\normalsize\centerline{\bfseries\uppercase{Sumário}}}
 
 \tableofcontents % Insere o sumário
 \clearpage % Garante que o sumário termine aqui
