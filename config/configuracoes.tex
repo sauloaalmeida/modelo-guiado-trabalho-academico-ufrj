@@ -16,7 +16,6 @@
 \usepackage{booktabs}                   % Usado para personalizar elementos em tabelas, como \toprule e \midrule
 \usepackage{arydshln}                   % Usado para personalizar elementos em tabelas, como \cdashline
 \usepackage{amsmath}                    % Usado nas referencias de equações, através do comando \eqref
-\usepackage{tocloft}                    % Pacote para formatar sumário, lista de figuras e tabelas
 \usepackage{float}                      % Necessario para posicionar as figuras e tabelas de forma flutuante
 \usepackage{enumitem}                   % Utilizada para formatar uma lista enumerada 
 \usepackage{svg}                        % Pacote que permite utilização de imagens SVGs (vetoriais) no documento 
@@ -82,5 +81,25 @@
 % juntamente com as suas demais configurações 
 %%%%% Evita reiniciar numeracoes das equações nos capitulos - FIM  %%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%% Formatação da lista de figura e de tabelas - INICIO  %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{titletoc} % Pacote para formatar sumário, lista de figuras e tabelas
 
+%a configuração só funciona se for antes do documentclass
+
+%Lista de Tabelas
+\titlecontents{figure}[0pt]
+{}
+{\figurename\ \thecontentslabel\ - }
+{}
+{\titlerule*[0.4pc]{.}\contentspage}
+[\addvspace{5pt}]
+
+%Lista de Tabelas
+\titlecontents{table}[0pt]
+{}
+{\tablename\ \thecontentslabel\ - }
+{ }
+{\titlerule*[0.4pc]{.}\contentspage}
+[\addvspace{5pt}]
+%%%%% Formatação da lista de figura e de tabelas - INICIO  %%%%%%%%%%%%%%%%%%%%%%%%
 

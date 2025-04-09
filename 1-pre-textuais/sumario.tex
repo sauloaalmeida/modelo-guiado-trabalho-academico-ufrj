@@ -1,8 +1,46 @@
 \addtocontents{toc}{\protect\thispagestyle{empty}} % força o "empty" na primeira pagina do sumário
 \pagestyle{empty} % remove a nunemracao das demais paginas de sumario (se houver mais de uma) 
 
+%apresenta ate o nivel 5, de paragrafo
+\setcounter{tocdepth}{4}
+
+%apresenta a numeracao ate o nivel 5, de paragrafo
+\setcounter{secnumdepth}{4}
+
+% titletoc 
+\titlecontents{chapter}[10pt]
+  {\normalfont\normalsize\bfseries}
+  {\contentslabel{10pt}\uppercase} % removido \MakeUppercase
+  {}
+  {\titlerule*[0.4pc]{.}\contentspage} % aqui sim!
+
+\titlecontents{section}[17pt]
+  {\normalfont\normalsize}
+  {\contentslabel{17pt}\uppercase}
+  {}
+  {\titlerule*[0.4pc]{.}\contentspage}
+
+\titlecontents{subsection}[30pt]
+  {\normalfont\normalsize\bfseries}
+  {\contentslabel{30pt}}
+  {}
+  {\titlerule*[0.4pc]{.}\contentspage}
+
+\titlecontents{subsubsection}[45pt]
+  {\normalfont\normalsize\bfseries\itshape}
+  {\contentslabel{45pt}}
+  {}
+  {\titlerule*[0.4pc]{.}\contentspage}
+
+\titlecontents{paragraph}[53pt]
+  {\normalfont\normalsize\itshape}
+  {\contentslabel{53pt}}
+  {}
+  {\titlerule*[0.4pc]{.}\contentspage}
+
+
 %Altera e Formata o titulo do sumario
-\renewcommand{\contentsname}{\normalsize\centerline{\bfseries\MakeUppercase{Sumário}}}
+\renewcommand{\contentsname}{\vspace{-65pt}\normalsize\centerline{\bfseries\MakeUppercase{Sumário}}}
 
 \tableofcontents % Insere o sumário
 \clearpage % Garante que o sumário termine aqui
