@@ -101,5 +101,52 @@
 { }
 {\titlerule*[0.4pc]{.}\contentspage}
 [\addvspace{5pt}]
-%%%%% Formatação da lista de figura e de tabelas - INICIO  %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Formatação da lista de figura e de tabelas - FIM  %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%% Formatação dos titulos dos capitulos, secao, subsecao, etc - INICIO  %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{titlesec}
+
+\titlespacing{\chapter}
+  {0pt}   % Espaço à esquerda
+  {-17pt}   % Espaço acima do título do capítulo (é aqui que se reduz)
+  {15pt}  % Espaço abaixo do título do capítulo
+
+\titleformat{\chapter}[hang] % shape
+{\normalsize\bfseries\uppercase} % format
+{\thechapter}
+{10pt}
+{}
+
+\titleformat{\section}[hang] % shape
+{\normalsize\mdseries\uppercase} % format
+{\thesection}
+{10pt}
+{}
+
+\titleformat{\subsection}[hang] % shape
+{\normalsize\bfseries} % format
+{\thesubsection}
+{10pt}
+{}
+
+\titleformat{\subsubsection}[hang] % shape
+{\normalsize\bfseries\itshape} % format
+{\thesubsubsection}
+{10pt}
+{}
+
+\titleformat{\paragraph}[hang] % shape
+{\normalsize\itshape} % format
+{\theparagraph}
+{10pt}
+{}
+
+\titleformat{\subparagraph}[hang] % shape
+{\normalsize\mdseries} % format
+{\thesubparagraph}
+{}
+{}
+%%%%% Formatação dos titulos dos capitulos, secao, subsecao, etc - FIM  %%%%%%%%%%%%%%%%%%%%%%%%
 
