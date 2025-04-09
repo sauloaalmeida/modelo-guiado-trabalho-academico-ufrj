@@ -1,14 +1,7 @@
 %Removendo inicialização da contagem de tabelas por capitulo
 \counterwithout{table}{chapter}
 
-%Define o formato do nome da tabela
-\renewcommand{\cfttabpresnum}{Tabela~} 
-\renewcommand{\cfttabaftersnum}{ - }
-\renewcommand{\cfttabnumwidth}{4.5em}
-
-%Altera e formata o titulo da lista de tabelas
-\renewcommand{\listtablename}{\normalsize\centerline{\bfseries\MakeUppercase{Lista de Tabelas}}}
-
+\renewcommand{\listtablename}{\vspace{-65pt}\normalsize\centerline{\bfseries\MakeUppercase{Lista de Tabelas}}}
 
 %imprime a lista de figiras
 \listoftables
