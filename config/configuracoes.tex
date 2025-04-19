@@ -61,7 +61,12 @@
 \usepackage{hyperref} % Cria os links das referencias internas e para links externos tb
 \makeatletter
 \hypersetup{
-    pdftitle={\@title}
+    pdftitle={\@title},
+    pdfpagemode=FullScreen,
+    colorlinks=true,      % Ativa a coloração dos links
+    linkcolor=black,     % Cor dos links internos
+    citecolor=black,     % Cor das citações
+    urlcolor=black       % Cor dos links de URL
 }
 \makeatother
 %%%%% Configurações de links das referencias internas e externos - FIM  %%%%%%%%%%%%%%%%%%%%%%%%
