@@ -7,34 +7,35 @@
 %apresenta a numeracao ate o nivel 5, de paragrafo
 \setcounter{secnumdepth}{4}
 
-% titletoc, configura a formatação do sumário
-\titlecontents{chapter}[10pt]
+% titletoc - Configuração da formatação dos títulos (em seus vários níveis) no sumário. 
+% A formatação desses mesmos títulos dentro do texto, precisa ser feito antes do begin{document} e ficou no arquivo: config/configuracoes.tex
+\titlecontents{chapter}[12pt]
   {\normalfont\normalsize\bfseries}
-  {\contentslabel{10pt}\uppercase} % removido \MakeUppercase
+  {\contentslabel{12pt}\uppercase} % removido \MakeUppercase
   {}
   {\titlerule*[0.4pc]{.}\contentspage} % aqui sim!
 
-\titlecontents{section}[17pt]
+\titlecontents{section}[20pt]
   {\normalfont\normalsize}
-  {\contentslabel{17pt}\uppercase}
+  {\contentslabel{20pt}\uppercase}
   {}
   {\titlerule*[0.4pc]{.}\contentspage}
 
-\titlecontents{subsection}[30pt]
+\titlecontents{subsection}[32pt]
   {\normalfont\normalsize\bfseries}
-  {\contentslabel{30pt}}
+  {\contentslabel{32pt}}
   {}
   {\titlerule*[0.4pc]{.}\contentspage}
 
-\titlecontents{subsubsection}[45pt]
-  {\normalfont\normalsize\bfseries\itshape}
-  {\contentslabel{45pt}}
+\titlecontents{subsubsection}[38pt]
+  {\normalfont\normalsize}
+  {\contentslabel{38pt}}
   {}
   {\titlerule*[0.4pc]{.}\contentspage}
 
-\titlecontents{paragraph}[53pt]
-  {\normalfont\normalsize\itshape}
-  {\contentslabel{53pt}}
+\titlecontents{paragraph}[46pt]
+  {\normalfont\normalsize}
+  {\contentslabel{46pt}}
   {}
   {\titlerule*[0.4pc]{.}\contentspage}
 
