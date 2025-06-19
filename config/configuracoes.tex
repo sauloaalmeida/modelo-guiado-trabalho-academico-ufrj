@@ -1,12 +1,13 @@
-\usepackage[brazil]{babel}              % Traduções utilizados por vários pacotes
+\usepackage[brazilian]{babel}              % Traduções utilizados por vários pacotes
 \usepackage[top=3cm,                    % definição padrao das margens das paginas
             bottom=2cm,
             left=3cm,
             right=2cm]{geometry}
 \usepackage[T1]{fontenc}		        % Selecao de codigos de fonte.
-\usepackage[utf8]{inputenc}		        % Codificacao do documento UTF-8 
-\usepackage{PTSerif}                    % Pacote da fonte escolhida: Opções de fontes em: https://ctan.org/topic/font
+\usepackage{csquotes} % Pacote para formatar as aspas duplas
+\usepackage{opensans}                    % Pacote da fonte escolhida: Opções de fontes em: https://ctan.org/topic/font
 \usepackage{lscape}                     % permite colocar um conteudo em formato paisagem (rotacionar)
+\usepackage{adjustbox}
 \usepackage{color}                      % Permite utilizar cores pelos nomes
 \usepackage{microtype}     			    % para melhorias de justificação
 \usepackage[indentfirst=false]{quoting} % Usado para citação
@@ -16,17 +17,13 @@
 \usepackage{arydshln}                   % Usado para personalizar elementos em tabelas, como \cdashline
 \usepackage{amsmath}                    % Usado nas referencias de equações, através do comando \eqref
 \usepackage{float}                      % Necessario para posicionar as figuras e tabelas de forma flutuante
-\usepackage{enumitem}                   % Utilizada para formatar uma lista enumerada 
 \usepackage{svg}                        % Pacote que permite utilização de imagens SVGs (vetoriais) no documento 
 \usepackage{pdfpages} % Necessario para incluir a ficha catalográfica
-\usepackage{adjustbox}
 
 
-
-%%%%% Definindo diretorios padrao do template e do projeto - INICIO %%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{graphicx}		            % Inclusão de gráficos, pdfs
-\graphicspath{{figuras/}{figuras/template}}
-%%%%% Definindo diretorios padrao do template e do projeto - INICIO %%%%%%%%%%%%%%%%%%%%%%%%
+% Usando pacote de estilos de referencias bibliograficas (estilo IBICT complero)
+\usepackage[style=3-pos-textuais/instituto-brasileiro-de-informacao-em-ciencia-e-tecnologia-abnt]{citation-style-language}
+\addbibresource{3-pos-textuais/referencias_bibliograficas.bib}
 
 
 
@@ -161,8 +158,11 @@
 {}
 %%%%% Formatação dos titulos dos capitulos, secao, subsecao, etc - FIM  %%%%%%%%%%%%%%%%%%%%%%%%
 
+% pacote que gera textos aletorios, pode remover quando for realizar o trabalho
+\usepackage{lipsum} 
 
 
-%%%%% Formatação das citações padrão ABNT - INICIO  
-\usepackage{abntex2cite} % citações no padrão ABNT
-%%%%% Formatação das citações padrão ABNT - FIM
+%%%%% Definindo diretorios padrao do template e do projeto - INICIO %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}		            % Inclusão de gráficos, pdfs
+\graphicspath{{figuras/}{figuras/template}}
+%%%%% Definindo diretorios padrao do template e do projeto - INICIO %%%%%%%%%%%%%%%%%%%%%%%%
