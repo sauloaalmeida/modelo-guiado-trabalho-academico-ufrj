@@ -3,11 +3,8 @@
             bottom=2cm,
             left=3cm,
             right=2cm]{geometry}
-\usepackage[T1]{fontenc}		        % Selecao de codigos de fonte.
-\usepackage{csquotes} % Pacote para formatar as aspas duplas
 \usepackage{opensans}                    % Pacote da fonte escolhida: Opções de fontes em: https://ctan.org/topic/font
 \usepackage{lscape}                     % permite colocar um conteudo em formato paisagem (rotacionar)
-\usepackage{adjustbox}
 \usepackage{color}                      % Permite utilizar cores pelos nomes
 \usepackage{microtype}     			    % para melhorias de justificação
 \usepackage[indentfirst=false]{quoting} % Usado para citação
@@ -21,6 +18,12 @@
 \usepackage{pdfpages} % Necessario para incluir a ficha catalográfica
 
 
+%%%%% Pacote que permite criar indices - INICIO  %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{imakeidx} % Pacote para criar o índice
+\makeindex[columns=3] % Configura quantidade de colunas do índice
+%%%%% Pacote que permite criar indices - FIM  %%%%%%%%%%%%%%%%%%%%%%%%
+
+
 % Usando pacote de estilos de referencias bibliograficas (estilo IBICT complero)
 \usepackage[style=3-pos-textuais/instituto-brasileiro-de-informacao-em-ciencia-e-tecnologia-abnt]{citation-style-language}
 \addbibresource{3-pos-textuais/referencias_bibliograficas.bib}
@@ -28,6 +31,7 @@
 
 
 %%%%% Redefinindo localização da paginação - INICIO %%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\headheight}{15pt} %Corrige warning do header do pacote fancyhdr
 \usepackage{fancyhdr} % Pacote utilizado para alterar a posicao da paginação
 \pagestyle{fancy}
 \fancyhf{} % Limpa todos os cabeçalhos e rodapés padrão
