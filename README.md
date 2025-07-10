@@ -17,6 +17,10 @@ Seguem algumas sugestões podem ajudar a alcançar esse objetivo de simplicidade
 ### Semântica do template
 É desejado que o esqueleto do template, possa ir além da formatação apenas do texto. É possível indicar boas práticas na semântica esperadas em um texto acadêmico, como: as principais seções e subseções esperadas bem como as indicações sobre qual seria o conteúdo esperado para cada uma delas.  
 
+## Documentação do projeto
+
+Uma documentação detalhada do projeto pode ser encontrada na [wiki do projeto](../../wiki).
+
 ## Como colaborar
 
 Dentre as maneiras possíveis para colaborar com o projeto, podemos destacar:
