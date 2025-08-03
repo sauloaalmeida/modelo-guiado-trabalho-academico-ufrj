@@ -12,7 +12,7 @@ Seguem algumas sugestões podem ajudar a alcançar esse objetivo de simplicidade
 
 1. Utilizando preferencialmente os recursos básicos e existentes do LaTeX.
 1. É importante tentar minimizar o uso de macros e comandos mirabolantes. Esse tipo de comando muitas vezes dificulta o entendimento e ajustes no trabalho dos usuários.
-1. Utilizar pacotes de latex já existentes para conseguir que as formatações desejadas. Por exemplo, para escrever uma epígrafe no formato estabelecido no manual, bastou utilizar o pacote "quoting" já existente. 
+1. Utilizar pacotes de latex já existentes para conseguir que as formatações desejadas. Por exemplo, para escrever uma epígrafe no formato estabelecido no manual, bastou utilizar o pacote "epigraph" já existente.
 
 ### Semântica do template
 É desejado que o esqueleto do template, possa ir além da formatação apenas do texto. É possível indicar boas práticas na semântica esperadas em um texto acadêmico, como: as principais seções e subseções esperadas bem como as indicações sobre qual seria o conteúdo esperado para cada uma delas.  

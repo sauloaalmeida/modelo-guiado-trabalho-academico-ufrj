@@ -7,7 +7,6 @@
 \usepackage{lscape}                     % permite colocar um conteudo em formato paisagem (rotacionar)
 \usepackage{color}                      % Permite utilizar cores pelos nomes
 \usepackage{microtype}     			    % para melhorias de justificação
-\usepackage[indentfirst=false]{quoting} % Usado para citação
 \usepackage{url}                        % Usado para formatar URLs no texto
 \usepackage{enumitem}                   % Permite alterar o formato das listas enumeradas 
 \usepackage{booktabs}                   % Usado para personalizar elementos em tabelas, como \toprule e \midrule
@@ -15,14 +14,16 @@
 \usepackage{amsmath}                    % Usado nas referencias de equações, através do comando \eqref
 \usepackage{float}                      % Necessario para posicionar as figuras e tabelas de forma flutuante
 \usepackage{svg}                        % Pacote que permite utilização de imagens SVGs (vetoriais) no documento 
-\usepackage[none]{hyphenat}
-\usepackage{ragged2e}
 \usepackage{pdfpages} % Necessario para incluir a ficha catalográfica
 
-\usepackage{epigraph}
-\setlength\epigraphrule{0pt}
-\setlength\epigraphwidth{.55\textwidth}
+\usepackage[none]{hyphenat}             % Usado para remover a quebra de linha em todo o texto, mas principalmente nos recuos das folhas de rosto e de eprovação
+\usepackage{ragged2e}                   % Usado para justificar o texto nos recuos das folhas de rosto e de eprovação
 
+%%%%% Pacote usado para citação descritivas, epigrafe, dedicatoria, e nos recuos das folhas de rosto e de eprovação - INICIO  %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{epigraph}
+\setlength\epigraphrule{0pt}  % remove a linha padrao do pacote
+\setlength\epigraphwidth{.55\textwidth} % define um tamanho inicial do recuo
+%%%%% Pacote usado para citação descritivas, epigrafe, dedicatoria, e nos recuos das folhas de rosto e de eprovação - FIM  %%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%% Pacote que permite criar indices - INICIO  %%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{imakeidx} % Pacote para criar o índice
