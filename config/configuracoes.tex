@@ -4,34 +4,37 @@
             left=3cm,
             right=2cm]{geometry}
 \usepackage{opensans}                    % Pacote da fonte escolhida: Opções de fontes em: https://ctan.org/topic/font
-\usepackage{lscape}                     % permite colocar um conteudo em formato paisagem (rotacionar)
 \usepackage{color}                      % Permite utilizar cores pelos nomes
 \usepackage{microtype}     			    % para melhorias de justificação
-\usepackage[indentfirst=false]{quoting} % Usado para citação
 \usepackage{url}                        % Usado para formatar URLs no texto
 \usepackage{enumitem}                   % Permite alterar o formato das listas enumeradas 
-\usepackage{booktabs}                   % Usado para personalizar elementos em tabelas, como \toprule e \midrule
-\usepackage{arydshln}                   % Usado para personalizar elementos em tabelas, como \cdashline
 \usepackage{amsmath}                    % Usado nas referencias de equações, através do comando \eqref
 \usepackage{float}                      % Necessario para posicionar as figuras e tabelas de forma flutuante
-\usepackage{svg}                        % Pacote que permite utilização de imagens SVGs (vetoriais) no documento 
 \usepackage{pdfpages} % Necessario para incluir a ficha catalográfica
 
+\usepackage{hyphenat}                   % Usado para remover a quebra de linha nos recuos das folhas de rosto e de aprovação
+\usepackage{ragged2e}                   % Usado para justificar o texto nos recuos das folhas de rosto e de eprovação
+
+%%%%% Pacote usado para citação descritivas, epigrafe, dedicatoria, e nos recuos das folhas de rosto e de eprovação - INICIO  %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{epigraph}
+\setlength\epigraphrule{0pt}  % remove a linha padrao do pacote
+\setlength\epigraphwidth{.57\textwidth} % define um tamanho inicial do recuo
+%%%%% Pacote usado para citação descritivas, epigrafe, dedicatoria, e nos recuos das folhas de rosto e de eprovação - FIM  %%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%% Pacote que permite criar indices - INICIO  %%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{imakeidx} % Pacote para criar o índice
-\makeindex[columns=3] % Configura quantidade de colunas do índice
+\makeindex[columns=3, options= -s config/estilo-indice.ist] % Configura quantidade de colunas do índice e o arquivo de estilo
 %%%%% Pacote que permite criar indices - FIM  %%%%%%%%%%%%%%%%%%%%%%%%
 
 
 % Usando pacote de estilos de referencias bibliograficas (estilo IBICT complero)
-\usepackage[style=3-pos-textuais/instituto-brasileiro-de-informacao-em-ciencia-e-tecnologia-abnt]{citation-style-language}
+\usepackage[style=config/instituto-brasileiro-de-informacao-em-ciencia-e-tecnologia-abnt]{citation-style-language}
 \addbibresource{3-pos-textuais/referencias_bibliograficas.bib}
 
 
 
 %%%%% Redefinindo localização da paginação - INICIO %%%%%%%%%%%%%%%%%%%%%%%%
-\setlength{\headheight}{15pt} %Corrige warning do header do pacote fancyhdr
+\setlength{\headheight}{15.3pt} %Corrige warning do header do pacote fancyhdr
 \usepackage{fancyhdr} % Pacote utilizado para alterar a posicao da paginação
 \pagestyle{fancy}
 \fancyhf{} % Limpa todos os cabeçalhos e rodapés padrão

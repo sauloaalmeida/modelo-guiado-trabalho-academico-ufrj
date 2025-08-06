@@ -18,6 +18,37 @@ Ao avaliar os dados da Tabela \ref{tab:resultados}, é possível realizar alguma
 \lipsum[18]
 
 
+\begin{table}[H]
+\caption{Tempos treinamento, predição e acurácia}
+\begin{center}
+\fontsize{10pt}{13pt}\selectfont
+\begin{tabular}{lccc}
+\hline
+Dataset                       & Tipo processamento  &   Tempo Predict (s)    &Acurácia1 (\%) \\
+\hline
+\textit{Iris}                 & Serial              &  0.0287 (0.005281)     & 94.24 (1.41)  \\
+                              & CPU Multiprocesso   &  0.0272 (0.000206)     & 93.22 (0.91)  \\
+                              & GPU                 &  0.0279 (0.000537)     & 93.31 (1.64)  \\
+\hline
+\textit{Sonar}                & Serial              &  0.0718 (0.000702)     & 85.26 (1.67)  \\
+                              & CPU Multiprocesso   &  0.0705 (0.000369)     & 86.36 (1.69)  \\
+                              & GPU                 &  0.0703 (0.000834)     & 85.80 (1.18)  \\
+\hline
+\textit{Glass Identification} & Serial              &  0.0575 (0.000698)     & 67.91 (1.97)  \\
+                              & CPU Multiprocesso   &  0.0577 (0.000530)     & 68.40 (1.84)  \\
+                              & GPU                 &  0.0571 (0.000587)     & 67.66 (1.76)  \\
+\hline
+\textit{Libras Movement}      & Serial              &  0.2050 (0.001077)     & 80.06 (1.24)  \\
+                              & CPU Multiprocesso   &  0.2020 (0.001227)     & 80.59 (1.16)  \\
+                              & GPU                 &  0.2022 (0.001252)     & 80.34 (1.03)  \\
+\hline
+\multicolumn{4}{l}{Fonte: O autor (2025)}
+\end{tabular}
+\label{tab:resultados}
+\end{center}
+\end{table}
+
+
 A medida de aceleração %informação do speedup pode ser 
 foi calculada pela Equação~\eqref{eq:speedup}, onde \(A\) é a \textit{aceleração}, \(T_s\) é o tempo de execução serial/sequencial e \(T_p\) é o tempo de execução paralelo. Dessa forma é possível analisar quantas vezes o desempenho em relação ao tempo sequencial foi impactado pela quantidade de processos utilizados. Quanto maior o número, mais rápido o algoritmo foi executado. 
 
@@ -25,61 +56,3 @@ foi calculada pela Equação~\eqref{eq:speedup}, onde \(A\) é a \textit{acelera
 A = T_s / T_p
 \label{eq:speedup}
 \end{equation}
-
-
-\begin{landscape}
-\begin{table}
-\caption{Exemplo de tabela complexa e rotacionada}
-\fontsize{10pt}{13pt}\selectfont
-\begin{tabular}{lcccccc}
-\toprule
-Dataset                       & Tipo processamento  & Tempo Treinamento (s) &   Tempo Predict1 (s)   &    Tempo Predict2 (s)  &  Acurácia1    &  Acurácia2    \\
-\midrule
-Nome Dataset1                 & Serial              &     2.03 (0.06)       &  0.0287 (0.005281)     & 0.0237 (0.000715)      &  94.24 (1.41) & 94.71 (1.24)  \\
-\cdashline{2-7}[1pt/1pt]
-                              & CPU Multi-thread    &     2.44 (0.06)       &  0.0272 (0.000206)     & 0.0240 (0.000617)      &  93.22 (0.91) & 93.93 (1.17)  \\
-\cdashline{2-7}[1pt/1pt]
-                              & GPU                 &     3.00 (0.13)       &  0.0279 (0.000537)     & 0.0244 (0.000725)      &  93.31 (1.64) & 94.22 (1.43)  \\
-\midrule 
-Nome Dataset1                 & Serial              &    29.47 (0.28)       &  0.0718 (0.000702)     & 0.1673 (0.005537)      &  85.26 (1.67) & 84.04 (2.29)  \\
-\cdashline{2-7}[1pt/1pt]
-                              & CPU Multi-thread    &    36.02 (0.39)       &  0.0705 (0.000369)     & 0.1670 (0.005399)      &  86.36 (1.69) & 84.41 (1.45)  \\
-\cdashline{2-7}[1pt/1pt]
-                              & GPU                 &    40.04 (0.40)       &  0.0703 (0.000834)     & 0.1507 (0.004985)      &  85.80 (1.18) & 84.28 (1.68)  \\
-\midrule 
-Nome Dataset2                 & Serial              &    70.27 (0.65)       &  0.0575 (0.000698)     & 0.2215 (0.003645)      &  67.91 (1.97) & 69.91 (1.62) \\
-\cdashline{2-7}[1pt/1pt]
-                              & CPU Multi-thread    &    83.12 (0.74)       &  0.0577 (0.000530)     & 0.2403 (0.004444)      &  68.40 (1.84) & 69.88 (2.01) \\
-\cdashline{2-7}[1pt/1pt]
-                              & GPU                 &    97.14 (0.76)       &  0.0571 (0.000587)     & 0.2162 (0.003746)      &  67.66 (1.76) & 69.50 (1.95) \\
-\midrule 
-Nome Dataset4                 & Serial              &   340.85 (1.36)       &  0.2050 (0.001077)     & 0.6914 (0.014545)      &  80.06 (1.24) & 79.96 (1.40) \\
-\cdashline{2-7}[1pt/1pt]
-                              & CPU Multi-thread    &   396.73 (2.19)       &  0.2020 (0.001227)     & 0.6844 (0.012787)      &  80.59 (1.16) & 80.54 (1.12) \\
-\cdashline{2-7}[1pt/1pt]
-                              & GPU                 &   440.27 (2.22)       &  0.2022 (0.001252)     & 0.6848 (0.012288)      &  80.34 (1.03) & 79.85 (1.26) \\
-\midrule 
-Nome Dataset5                 & Serial              &   463.12 (2.26)       &  0.1283 (0.001132)     & 0.6212 (0.012257)      &  70.69 (1.96) & 70.84 (1.64) \\
-\cdashline{2-7}[1pt/1pt]
-                              & CPU Multi-thread    &   542.16 (3.25)       &  0.1263 (0.000826)     & 0.6240 (0.012652)      &  69.71 (1.53) & 70.30 (1.41) \\
-\cdashline{2-7}[1pt/1pt]
-                              & GPU                 &   621.60 (3.05)       &  0.1320 (0.001443)     & 0.7037 (0.015179)      &  70.06 (1.83) & 70.12 (1.62) \\
-\midrule 
-Nome Dataset6                 & Serial              &   823.81 (112.64)     &  0.0178 (0.000912)     & 19.6347 (0.541860)     &  82.14 (0.27) & 82.94 (0.26) \\
-\cdashline{2-7}[1pt/1pt]
-                              & CPU Multi-thread    &   805.33 (79.41)      &  0.0150 (0.000670)     & 18.8484 (0.485823)     &  82.15 (0.26) & 82.97 (0.29) \\
-\cdashline{2-7}[1pt/1pt]
-                              & GPU                 &   962.65 (126.90)     &  0.0307 (0.001097)     & 16.7377 (0.473457)     &  82.16 (0.30) & 82.91 (0.29) \\
-\midrule 
-Nome Dataset7                 & Serial              & 10986.52 (162.84)     &  0.1610	(0.007035)    &107.2397	(1.481285)	  &  77.06 (0.30) & 80.48 (0.25) \\
-\cdashline{2-7}[1pt/1pt]
-                              & CPU Multi-thread    & 10832.09 (140.02)     &  0.1586	(0.006309)    &106.4547	(1.219125)	    &  77.07 (0.40) & 80.35 (0.30) \\
-\cdashline{2-7}[1pt/1pt]
-                              & GPU                 & 11762.89 (157.42)     &  0.1595	(0.006406)    &107.8366	(1.210092)	    &  77.04 (0.28) & 80.44 (0.33) \\
-\bottomrule
-\multicolumn{7}{l}{Fonte: O autor (2025)}
-\end{tabular}
-\label{tab:resultados}
-\end{table}
-\end{landscape}
-\newpage

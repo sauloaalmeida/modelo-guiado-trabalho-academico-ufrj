@@ -1,7 +1,16 @@
 \newpage
+
+% Definido um novo cabeçalho com o título do elemento atual
+\fancypagestyle{tituloanexoapendice}[plain]{
+    \fancyhead[C]{\bfseries\uppercase{Anexo A - NT-2-06 Iluminação de emergência}}
+}
+
+% Resolvendo bug de erro de pagina no hyperref e definindo nova entrada do sumário
 \phantomsection
 \addcontentsline{toc}{chapter}{\MakeUppercase{Anexo A - NT-2-06 Iluminação de emergência}} 
-\begin{center}
-\textbf{\MakeUppercase{Anexo A - NT-2-06 Iluminação de emergência}}
-\end{center}
-\includepdf[pages=-]{metadados/NT-2-06.pdf}
+
+% Inclui apenas a primeira página do PDF, com estilo que tem o titulo desse elemento
+\includepdf[pages=1,scale=0.82,frame=true,pagecommand={\thispagestyle{tituloanexoapendice}}]{metadados/NT-2-06.pdf}
+
+% Inclui da página 2 em diante do PDF, com o cabeçalho padrão apenas com a paginação
+\includepdf[pages=2-,scale=0.82,frame=true,pagecommand={\thispagestyle{plain}}]{metadados/NT-2-06.pdf}
