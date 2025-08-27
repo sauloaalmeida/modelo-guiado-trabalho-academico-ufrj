@@ -1,12 +1,12 @@
-# template-dissertacao-ppgi-ufrj
-Template aberto latex para dissertação do PPGI da UFRJ, aderente ao padrão estabelecido no manual de trabalhos acadêmicos da UFRJ estabalecido pelo SIBI (https://www.sibi.ufrj.br/index.php/inicio/700-atualizacao-do-manual-de-trabalhos-academicos-da-ufrj) , e o manual está disponível em: [Manual da padronização](https://drive.google.com/file/d/1IfNy51_qMf8cXEabOlm1U6zMXcH10FWL/view?usp=sharing).
+# modelo-guiado-trabalho-academico-uftj
+Modelo guiado para trabalho acadêmico da UFRJ, aderente ao padrão estabelecido no manual de trabalhos acadêmicos da UFRJ estabalecido pelo SIBI (https://www.sibi.ufrj.br/index.php/inicio/700-atualizacao-do-manual-de-trabalhos-academicos-da-ufrj) , e o manual está disponível em: [Manual da padronização](https://drive.google.com/file/d/1IfNy51_qMf8cXEabOlm1U6zMXcH10FWL/view?usp=sharing).
 
 ## Ideia do projeto
 
-A ideia desse projeto é de criar um template LaTeX para o Programa de Pós-Graduação em Informática (PPGI) da UFRJ, mas seguindo algumas premissas:
+A ideia desse projeto é de criar um modelo LaTeX para o utilização nos trabalhos acadêmicos da UFRJ, mas seguindo algumas premissas:
 
-### O template precisa ser simples
-A principal ponto do projeto é a de tentar fazer um template que seja fácil de usar e de manter. Para isso o princípio do KISS (Keep It Simple Stupid) é muito bem vindo. 
+### O modelo precisa ser simples
+A principal ponto do projeto é a de tentar fazer um modelo que seja fácil de usar e de manter. Para isso o princípio do KISS (Keep It Simple Stupid) é muito bem vindo. 
 
 Seguem algumas sugestões podem ajudar a alcançar esse objetivo de simplicidade:
 
@@ -14,8 +14,8 @@ Seguem algumas sugestões podem ajudar a alcançar esse objetivo de simplicidade
 1. É importante tentar minimizar o uso de macros e comandos mirabolantes. Esse tipo de comando muitas vezes dificulta o entendimento e ajustes no trabalho dos usuários.
 1. Utilizar pacotes de latex já existentes para conseguir que as formatações desejadas. Por exemplo, para escrever uma epígrafe no formato estabelecido no manual, bastou utilizar o pacote "epigraph" já existente.
 
-### Semântica do template
-É desejado que o esqueleto do template, possa ir além da formatação apenas do texto. É possível indicar boas práticas na semântica esperadas em um texto acadêmico, como: as principais seções e subseções esperadas bem como as indicações sobre qual seria o conteúdo esperado para cada uma delas.  
+### Semântica do modelo
+É desejado que o esqueleto do modelo, possa ir além da formatação apenas do texto. É possível indicar boas práticas na semântica esperadas em um texto acadêmico, como: as principais seções e subseções esperadas bem como as indicações sobre qual seria o conteúdo esperado para cada uma delas.  
 
 ## Documentação do projeto
 
