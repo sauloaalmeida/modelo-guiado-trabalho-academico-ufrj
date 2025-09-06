@@ -1,0 +1,48 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Projeto Jacurutu: um modelo guiado para elaboração de
+  trabalhos acadêmicos da UFRJ
+message: >-
+  Caso utilize esse modelo, favor citar usando o metadado
+  desse arquivo.
+type: software
+authors:
+  - given-names: Saulo Andrade
+    family-names: Almeida
+    email: sauloandrade@gmail.com
+    orcid: 'https://orcid.org/0009-0000-3432-9996'
+  - given-names: Tatiana de Sousa
+    family-names: Ribeiro
+    email: tatiana.ribeiro@nce.ufrj.br
+  - given-names: Mônica Ferreira
+    name-particle: da
+    family-names: Silva
+    email: monica.silva@ppgi.ufrj.br
+    orcid: 'https://orcid.org/0000-0003-0951-6612'
+  - given-names: Élton Carneiro
+    family-names: Marinho
+    orcid: 'https://orcid.org/0000-0003-0117-0610'
+    email: elton.marinho@ppgi.ufrj.br
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.16969842
+    description: >-
+      Esse é o DOI que aponta para a versão LaTeX mais
+      atualizada de todas as versões do projeto
+repository-code: >-
+  https://github.com/sauloaalmeida/modelo-guiado-trabalho-academico-ufrj
+abstract: >-
+  O Projeto Jacututu é um modelo em LaTeX simplificado e de
+  fácil manutenção, que tem por objetivo atender às regras
+  de formatação estabelecidas pelo SIBI da UFRJ, além de
+  oferecer um guia com dicas de como utilizar o modelo
+keywords:
+  - modelo
+  - trabalho acadêmico
+  - ufrj
+  - latex
+  - guia
+license: Apache-2.0
