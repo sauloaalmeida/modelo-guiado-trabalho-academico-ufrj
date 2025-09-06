@@ -1,4 +1,6 @@
 # modelo-guiado-trabalho-academico-uftj
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16969842.svg)](https://doi.org/10.5281/zenodo.16969842)
+
 Modelo guiado para trabalho acadêmico da UFRJ, aderente ao padrão estabelecido no manual de trabalhos acadêmicos da UFRJ estabalecido pelo SIBI (https://www.sibi.ufrj.br/index.php/inicio/700-atualizacao-do-manual-de-trabalhos-academicos-da-ufrj) , e o manual está disponível em: [Manual da padronização](https://drive.google.com/file/d/1IfNy51_qMf8cXEabOlm1U6zMXcH10FWL/view?usp=sharing).
 
 ## Ideia do projeto
