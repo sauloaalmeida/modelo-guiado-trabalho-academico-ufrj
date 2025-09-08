@@ -27,6 +27,10 @@ Uma documentação detalhada do projeto pode ser encontrada na [wiki do projeto]
 
 Dentre as maneiras possíveis para colaborar com o projeto, podemos destacar:
 
+### Citando o projeto
+
+O tópico [Como citar ](../../wiki/Como-citar) da wiki do projeto, apresenta de forma mais detalhada, como citar esse modelo. A seção de [`2-textos/metodologia.tex`](../blob/master/2-textos/metodologia.tex) também apresenta um exemplo de citação.
+
 ### Reportar o problemas existentes no formato 
 
 1. Avaliar o formato atual do texto gerado pelo projeto (pode ser olhando o arquivo [`documento.pdf`](documento.pdf), na raiz do repositório);
